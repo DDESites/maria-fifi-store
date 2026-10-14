@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Maria Fifi Store">
+  <defs>
+    <linearGradient id="mfGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B76E79"/>
+      <stop offset="55%" stop-color="#A87FA8"/>
+      <stop offset="100%" stop-color="#8E6BA6"/>
+    </linearGradient>
+    <linearGradient id="mfGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9A24B"/>
+      <stop offset="50%" stop-color="#E4C77E"/>
+      <stop offset="100%" stop-color="#C9A24B"/>
+    </linearGradient>
+    <path id="mfTopArc" d="M 46 150 A 104 104 0 0 1 254 150" fill="none"/>
+    <path id="mfBottomArc" d="M 58 150 A 92 92 0 0 0 242 150" fill="none"/>
+  </defs>
+
+  <!-- anéis -->
+  <circle cx="150" cy="150" r="142" fill="none" stroke="url(#mfGrad)" stroke-width="4"/>
+  <circle cx="150" cy="150" r="131" fill="none" stroke="url(#mfGold)" stroke-width="1.2" opacity="0.85"/>
+
+  <!-- nome em arco no topo -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="23.5" letter-spacing="7.5" fill="#2A2022">
+    <textPath href="#mfTopArc" startOffset="50%" text-anchor="middle">MARIA FIFI</textPath>
+  </text>
+
+  <!-- assinatura em arco na base -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" letter-spacing="1.6" fill="#6E5B63">
+    <textPath href="#mfBottomArc" startOffset="50%" text-anchor="middle">as roupas que dão o que falar</textPath>
+  </text>
+
+  <!-- monograma -->
+  <text x="150" y="176" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-size="96" font-weight="700" letter-spacing="-2" fill="url(#mfGrad)">MF</text>
+
+  <!-- losangos dourados -->
+  <g fill="url(#mfGold)">
+    <rect x="30.5" y="146" width="8" height="8" transform="rotate(45 34.5 150)"/>
+    <rect x="261.5" y="146" width="8" height="8" transform="rotate(45 265.5 150)"/>
+  </g>
+
+  <!-- STORE -->
+  <text x="150" y="206" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="11" fill="#2A2022">STORE</text>
+</svg>

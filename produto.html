@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto — Maria Fifi Store</title>
+  <meta name="description" content="Detalhes da peça: fotos, tamanhos, cores, tecido e caimento. Compre na Maria Fifi Store com envio para todo o Brasil.">
+  <meta name="theme-color" content="#b76e79">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="produto">
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="topo-aviso">
+    <strong>Envio para todo o Brasil</strong> • Frete grátis em compras acima de R$ 299 • Retire na loja de Águas Lindas
+  </div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <button class="icone-btn menu-hamburguer" data-abrir-menu aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="marca" href="index.html">
+        <img src="assets/logo.svg" alt="Logotipo da Maria Fifi Store" width="52" height="52">
+        <span>
+          <span class="marca-nome">Maria Fifi Store</span>
+          <span class="marca-assinatura">as roupas que dão o que falar</span>
+        </span>
+      </a>
+      <nav class="nav-principal" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="catalogo.html?cat=Vestidos">Vestidos</a>
+        <a href="catalogo.html?cat=Conjuntos">Conjuntos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="acoes">
+        <button class="icone-btn" data-abrir-busca aria-label="Buscar produtos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <a class="icone-btn" href="https://www.instagram.com/mariafifii_store/" target="_blank" rel="noopener" aria-label="Instagram da Maria Fifi Store">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="icone-btn" href="sacola.html" aria-label="Ver sacola de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+          <span class="contador-carrinho" data-badge-carrinho style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu de navegação">
+    <button class="btn btn-contorno btn-mini" data-fechar style="margin-bottom:1rem">Fechar</button>
+    <a href="index.html">Início</a>
+    <a href="catalogo.html">Catálogo completo</a>
+    <a href="catalogo.html?cat=Vestidos">Vestidos</a>
+    <a href="catalogo.html?cat=Conjuntos">Conjuntos</a>
+    <a href="catalogo.html?cat=Blusas">Blusas</a>
+    <a href="catalogo.html?cat=Acessórios">Acessórios</a>
+    <a href="sobre.html">Sobre a loja</a>
+    <a href="contato.html">Contato e localização</a>
+    <a href="faq.html">Perguntas frequentes</a>
+    <a href="https://wa.me/5561981975681" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </nav>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <div class="busca-painel" id="painel-busca" role="search" aria-label="Busca de produtos">
+    <div class="container">
+      <form class="busca-form" id="form-busca" action="catalogo.html" method="get" role="search">
+        <label class="sr-only" for="campo-busca">O que você procura hoje?</label>
+        <input type="search" id="campo-busca" name="q" placeholder="Buscar vestidos, conjuntos, cores, tamanhos…" autocomplete="off">
+        <button type="submit" class="btn btn-primario btn-mini">Buscar</button>
+        <button type="button" class="icone-btn" data-fechar aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </form>
+      <div class="busca-sugestoes" id="busca-sugestoes"></div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <div class="container">
+      <p class="caminho" id="caminho" style="padding-top:1.4rem"><a href="index.html">Início</a> › <a href="catalogo.html">Catálogo</a></p>
+    </div>
+
+    <div id="produto-nao-encontrado" class="container" hidden>
+      <div class="vazio mt-2">
+        <h3>Peça não encontrada</h3>
+        <p>Ela pode ter saído do catálogo. Dá uma olhada nas novidades ou chame no WhatsApp que eu procuro para você.</p>
+        <p>
+          <a class="btn btn-primario btn-mini" href="catalogo.html">Ver catálogo</a>
+          <a class="btn btn-zap btn-mini" href="https://wa.me/5561981975681" target="_blank" rel="noopener">Falar com a Fifi</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container produto-detalhe" id="produto-detalhe">
+      <div>
+        <div class="galeria-principal">
+          <img id="foto-principal" src="assets/placeholder.svg" alt="" onerror="mfImgFalha(this)">
+        </div>
+        <div class="galeria-miniaturas" id="galeria-miniaturas" role="group" aria-label="Outras fotos da peça"></div>
+      </div>
+
+      <div>
+        <span class="eyebrow" id="produto-categoria"></span>
+        <h1 id="produto-nome">Carregando…</h1>
+
+        <div class="avaliacoes">
+          <span class="estrelas" aria-hidden="true">★★★★★</span>
+          <span id="produto-avaliacao">4,9 · 128 avaliações</span>
+        </div>
+
+        <div class="detalhe-preco">
+          <span class="preco" id="produto-preco"></span>
+          <span class="preco-antigo" id="produto-preco-antigo"></span>
+          <span class="desconto-chip" id="produto-desconto" hidden></span>
+        </div>
+
+        <p class="detalhe-descricao" id="produto-resumo"></p>
+
+        <div class="grupo-escolha">
+          <strong>Cor: <span class="legenda" id="legenda-cor">escolha uma opção</span></strong>
+          <div class="botoes-escolha" id="botoes-cor" role="group" aria-label="Escolher cor"></div>
+        </div>
+
+        <div class="grupo-escolha">
+          <strong>
+            Tamanho: <span class="legenda" id="legenda-tamanho">escolha uma opção</span>
+            <button type="button" id="abrir-guia" style="border:none;background:none;color:var(--lilas-escuro);text-decoration:underline;font-size:0.85rem;margin-left:0.4rem">Guia de medidas</button>
+          </strong>
+          <div class="botoes-escolha" id="botoes-tamanho" role="group" aria-label="Escolher tamanho"></div>
+        </div>
+
+        <div class="aviso-erro" id="aviso-erro" role="alert"></div>
+
+        <div class="linha-acao">
+          <button class="btn btn-primario btn-bloco" id="btn-adicionar">Adicionar à sacola</button>
+          <a class="btn btn-zap btn-bloco" id="btn-zap" href="#" target="_blank" rel="noopener">Tirar dúvida no WhatsApp</a>
+        </div>
+
+        <div class="beneficios" style="border-radius:12px">
+          <ul style="grid-template-columns:1fr 1fr; padding:1rem">
+            <li style="justify-content:flex-start">Frete grátis acima de R$ 299</li>
+            <li style="justify-content:flex-start">Envio para todo o Brasil</li>
+            <li style="justify-content:flex-start">Troca em até 7 dias</li>
+            <li style="justify-content:flex-start">Pix, cartão e boleto</li>
+          </ul>
+        </div>
+
+        <div class="detalhe-info" id="produto-info"></div>
+      </div>
+    </div>
+
+    <section class="secao secao-alternada" aria-labelledby="titulo-relacionados" id="secao-relacionados">
+      <div class="container">
+        <div class="secao-titulo">
+          <span class="eyebrow">Combine com</span>
+          <h2 id="titulo-relacionados">Peças que combinam com esta</h2>
+        </div>
+        <div class="grade-produtos" id="grade-relacionados"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Guia de medidas -->
+  <div class="modal" id="modal-guia" role="dialog" aria-modal="true" aria-labelledby="titulo-guia">
+    <div class="modal-caixa">
+      <h2 id="titulo-guia" style="font-size:1.4rem">Guia de medidas</h2>
+      <p>Medidas do corpo em centímetros. Se ficar entre dois tamanhos, escolha o maior — ou chame no WhatsApp que eu oriento.</p>
+      <table>
+        <caption class="sr-only">Medidas por tamanho</caption>
+        <thead>
+          <tr><th scope="col">Tamanho</th><th scope="col">Busto</th><th scope="col">Cintura</th><th scope="col">Quadril</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>P</td><td>84–88 cm</td><td>64–68 cm</td><td>90–94 cm</td></tr>
+          <tr><td>M</td><td>89–94 cm</td><td>69–74 cm</td><td>95–100 cm</td></tr>
+          <tr><td>G</td><td>95–102 cm</td><td>75–82 cm</td><td>101–108 cm</td></tr>
+          <tr><td>GG</td><td>103–110 cm</td><td>83–90 cm</td><td>109–116 cm</td></tr>
+          <tr><td>36</td><td>84–88 cm</td><td>64–68 cm</td><td>90–94 cm</td></tr>
+          <tr><td>38</td><td>89–94 cm</td><td>69–74 cm</td><td>95–100 cm</td></tr>
+          <tr><td>40</td><td>95–100 cm</td><td>75–80 cm</td><td>101–106 cm</td></tr>
+          <tr><td>42</td><td>101–106 cm</td><td>81–86 cm</td><td>107–112 cm</td></tr>
+          <tr><td>44</td><td>107–114 cm</td><td>87–94 cm</td><td>113–120 cm</td></tr>
+        </tbody>
+      </table>
+      <p style="color:var(--texto-suave);font-size:0.9rem"><strong>Caimento:</strong> as modelagens da Maria Fifi seguem o padrão nacional. Peças de tricô e crepe têm mais elasticidade e comportam meio tamanho a mais.</p>
+      <button class="btn btn-escuro btn-bloco" data-fechar-modal>Entendi</button>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="marca" href="index.html">
+            <img src="assets/logo.svg" alt="Logotipo da Maria Fifi Store" width="56" height="56">
+            <span>
+              <span class="marca-nome">Maria Fifi Store</span>
+              <span class="marca-assinatura">as roupas que dão o que falar</span>
+            </span>
+          </a>
+          <p style="margin-top:1rem">Moda feminina com curadoria, de Águas Lindas para todo o Brasil.</p>
+          <div class="rodape-redes">
+            <a href="https://www.instagram.com/mariafifii_store/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/5561981975681" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Comprar</h4>
+          <ul>
+            <li><a href="catalogo.html">Catálogo completo</a></li>
+            <li><a href="catalogo.html?cat=Vestidos">Vestidos</a></li>
+            <li><a href="catalogo.html?cat=Conjuntos">Conjuntos</a></li>
+            <li><a href="catalogo.html?ordem=promocao">Promoções</a></li>
+            <li><a href="sacola.html">Minha sacola</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre a loja</a></li>
+            <li><a href="contato.html">Contato e localização</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="trocas.html">Trocas e devoluções</a></li>
+            <li><a href="privacidade.html">Privacidade e condições</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul class="rodape-contato">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15v-3.2l-4-1.6-2 2a12 12 0 0 1-6.2-6.2l2-2L7.2 5z"/></svg> <a href="https://wa.me/5561981975681" target="_blank" rel="noopener">(61) 98197-5681</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> <a href="mailto:contato@mariafifistore.com.br">contato@mariafifistore.com.br</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Águas Lindas de Goiás — GO</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Seg a sáb, das 9h às 19h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© <span data-ano></span> Maria Fifi Store — Todos os direitos reservados.</span>
+        <span>Feito com carinho em Goiás 💜</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/produto.js"></script>
+</body>
+</html>

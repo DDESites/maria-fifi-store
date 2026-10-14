@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trocas e devoluções — Maria Fifi Store</title>
+  <meta name="description" content="Política de trocas e devoluções da Maria Fifi Store: prazos, condições e como solicitar.">
+  <meta name="theme-color" content="#b76e79">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="trocas">
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="topo-aviso">
+    <strong>Envio para todo o Brasil</strong> • Frete grátis em compras acima de R$ 299 • Retire na loja de Águas Lindas
+  </div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <button class="icone-btn menu-hamburguer" data-abrir-menu aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="marca" href="index.html">
+        <img src="assets/logo.svg" alt="Logotipo da Maria Fifi Store" width="52" height="52">
+        <span>
+          <span class="marca-nome">Maria Fifi Store</span>
+          <span class="marca-assinatura">as roupas que dão o que falar</span>
+        </span>
+      </a>
+      <nav class="nav-principal" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="catalogo.html?cat=Vestidos">Vestidos</a>
+        <a href="catalogo.html?cat=Conjuntos">Conjuntos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="acoes">
+        <button class="icone-btn" data-abrir-busca aria-label="Buscar produtos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <a class="icone-btn" href="https://www.instagram.com/mariafifii_store/" target="_blank" rel="noopener" aria-label="Instagram da Maria Fifi Store">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="icone-btn" href="sacola.html" aria-label="Ver sacola de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+          <span class="contador-carrinho" data-badge-carrinho style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu de navegação">
+    <button class="btn btn-contorno btn-mini" data-fechar style="margin-bottom:1rem">Fechar</button>
+    <a href="index.html">Início</a>
+    <a href="catalogo.html">Catálogo completo</a>
+    <a href="catalogo.html?cat=Vestidos">Vestidos</a>
+    <a href="catalogo.html?cat=Conjuntos">Conjuntos</a>
+    <a href="catalogo.html?cat=Blusas">Blusas</a>
+    <a href="catalogo.html?cat=Acessórios">Acessórios</a>
+    <a href="sobre.html">Sobre a loja</a>
+    <a href="contato.html">Contato e localização</a>
+    <a href="faq.html">Perguntas frequentes</a>
+    <a href="https://wa.me/5561981975681" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </nav>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <div class="busca-painel" id="painel-busca" role="search" aria-label="Busca de produtos">
+    <div class="container">
+      <form class="busca-form" id="form-busca" action="catalogo.html" method="get" role="search">
+        <label class="sr-only" for="campo-busca">O que você procura hoje?</label>
+        <input type="search" id="campo-busca" name="q" placeholder="Buscar vestidos, conjuntos, cores, tamanhos…" autocomplete="off">
+        <button type="submit" class="btn btn-primario btn-mini">Buscar</button>
+        <button type="button" class="icone-btn" data-fechar aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </form>
+      <div class="busca-sugestoes" id="busca-sugestoes"></div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <div class="pagina-topo">
+      <div class="container">
+        <p class="caminho"><a href="index.html">Início</a> › Trocas e devoluções</p>
+        <h1>Trocas e devoluções</h1>
+        <p>Tranquilidade para comprar: se não serviu, a gente resolve junto.</p>
+      </div>
+    </div>
+
+    <div class="container conteudo-prosa">
+      <p>Na Maria Fifi Store você tem até <strong>7 dias corridos</strong> após o recebimento para solicitar troca ou devolução, conforme o Código de Defesa do Consumidor (art. 49). Nossa política é simples e humana: a gente prefere que você fique feliz com a peça.</p>
+
+      <h2>Como solicitar</h2>
+      <ul>
+        <li>Chame no <a href="https://wa.me/5561981975681" target="_blank" rel="noopener" style="text-decoration:underline">WhatsApp (61) 98197-5681</a> informando o código do pedido e o motivo.</li>
+        <li>Enviamos as instruções de envio ou retirada conforme o seu caso.</li>
+        <li>Após recebermos e conferirmos a peça, fazemos a troca pelo tamanho ou modelo desejado, ou o estorno pelo mesmo meio de pagamento.</li>
+      </ul>
+
+      <h2>Condições para troca ou devolução</h2>
+      <ul>
+        <li>A peça deve estar sem uso, sem lavagem, com etiqueta e na embalagem original.</li>
+        <li>Devoluções por defeito de fabricação ou erro de envio da loja são feitas às nossas custas.</li>
+        <li>Trocas por arrependimento ou preferência de tamanho têm frete de devolução por conta da cliente, exceto quando a peça apresentar defeito.</li>
+        <li>Peças em promoção seguem as mesmas regras; confira observações específicas na descrição quando houver.</li>
+      </ul>
+
+      <h2>Prazos</h2>
+      <ul>
+        <li>Análise da peça devolvida: até 3 dias úteis após o recebimento.</li>
+        <li>Estorno no Pix ou boleto: até 2 dias úteis após a análise.</li>
+        <li>Estorno no cartão: conforme o prazo do banco, em até 1 ou 2 faturas.</li>
+        <li>Nova peça enviada em troca: envio em até 2 dias úteis após a aprovação.</li>
+      </ul>
+
+      <h2>Produto com defeito</h2>
+      <p>Recebeu a peça com defeito, errada ou danificada no transporte? Fale conosco em até 7 dias com fotos do produto e da embalagem. Resolveremos com prioridade, sem custo para você.</p>
+
+      <h2>Contato</h2>
+      <p>Segunda a sábado, das 9h às 19h — <a href="https://wa.me/5561981975681" target="_blank" rel="noopener" style="text-decoration:underline">(61) 98197-5681</a> ou <a href="mailto:contato@mariafifistore.com.br" style="text-decoration:underline">contato@mariafifistore.com.br</a>.</p>
+
+      <p class="centro mt-2"><a class="btn btn-zap btn-mini" href="https://wa.me/5561981975681?text=Oi%2C%20Fifi%20%F0%9F%92%9C%20Preciso%20fazer%20uma%20troca" target="_blank" rel="noopener">Solicitar troca pelo WhatsApp</a></p>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="marca" href="index.html">
+            <img src="assets/logo.svg" alt="Logotipo da Maria Fifi Store" width="56" height="56">
+            <span>
+              <span class="marca-nome">Maria Fifi Store</span>
+              <span class="marca-assinatura">as roupas que dão o que falar</span>
+            </span>
+          </a>
+          <p style="margin-top:1rem">Moda feminina com curadoria, de Águas Lindas para todo o Brasil.</p>
+          <div class="rodape-redes">
+            <a href="https://www.instagram.com/mariafifii_store/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/5561981975681" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Comprar</h4>
+          <ul>
+            <li><a href="catalogo.html">Catálogo completo</a></li>
+            <li><a href="catalogo.html?cat=Vestidos">Vestidos</a></li>
+            <li><a href="catalogo.html?cat=Conjuntos">Conjuntos</a></li>
+            <li><a href="catalogo.html?ordem=promocao">Promoções</a></li>
+            <li><a href="sacola.html">Minha sacola</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre a loja</a></li>
+            <li><a href="contato.html">Contato e localização</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="trocas.html">Trocas e devoluções</a></li>
+            <li><a href="privacidade.html">Privacidade e condições</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul class="rodape-contato">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15v-3.2l-4-1.6-2 2a12 12 0 0 1-6.2-6.2l2-2L7.2 5z"/></svg> <a href="https://wa.me/5561981975681" target="_blank" rel="noopener">(61) 98197-5681</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> <a href="mailto:contato@mariafifistore.com.br">contato@mariafifistore.com.br</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Águas Lindas de Goiás — GO</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Seg a sáb, das 9h às 19h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© <span data-ano></span> Maria Fifi Store — Todos os direitos reservados.</span>
+        <span>Feito com carinho em Goiás 💜</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

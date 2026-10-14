@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre a loja — Maria Fifi Store</title>
+  <meta name="description" content="Conheça a história da Maria Fifi Store: moda feminina com curadoria em Águas Lindas de Goiás, atendimento próximo e envio para todo o Brasil.">
+  <meta name="theme-color" content="#b76e79">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="sobre">
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="topo-aviso">
+    <strong>Envio para todo o Brasil</strong> • Frete grátis em compras acima de R$ 299 • Retire na loja de Águas Lindas
+  </div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <button class="icone-btn menu-hamburguer" data-abrir-menu aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="marca" href="index.html">
+        <img src="assets/logo.svg" alt="Logotipo da Maria Fifi Store" width="52" height="52">
+        <span>
+          <span class="marca-nome">Maria Fifi Store</span>
+          <span class="marca-assinatura">as roupas que dão o que falar</span>
+        </span>
+      </a>
+      <nav class="nav-principal" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="catalogo.html?cat=Vestidos">Vestidos</a>
+        <a href="catalogo.html?cat=Conjuntos">Conjuntos</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="acoes">
+        <button class="icone-btn" data-abrir-busca aria-label="Buscar produtos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <a class="icone-btn" href="https://www.instagram.com/mariafifii_store/" target="_blank" rel="noopener" aria-label="Instagram da Maria Fifi Store">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="icone-btn" href="sacola.html" aria-label="Ver sacola de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+          <span class="contador-carrinho" data-badge-carrinho style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu de navegação">
+    <button class="btn btn-contorno btn-mini" data-fechar style="margin-bottom:1rem">Fechar</button>
+    <a href="index.html">Início</a>
+    <a href="catalogo.html">Catálogo completo</a>
+    <a href="catalogo.html?cat=Vestidos">Vestidos</a>
+    <a href="catalogo.html?cat=Conjuntos">Conjuntos</a>
+    <a href="catalogo.html?cat=Blusas">Blusas</a>
+    <a href="catalogo.html?cat=Acessórios">Acessórios</a>
+    <a href="sobre.html">Sobre a loja</a>
+    <a href="contato.html">Contato e localização</a>
+    <a href="faq.html">Perguntas frequentes</a>
+    <a href="https://wa.me/5561981975681" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </nav>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <div class="busca-painel" id="painel-busca" role="search" aria-label="Busca de produtos">
+    <div class="container">
+      <form class="busca-form" id="form-busca" action="catalogo.html" method="get" role="search">
+        <label class="sr-only" for="campo-busca">O que você procura hoje?</label>
+        <input type="search" id="campo-busca" name="q" placeholder="Buscar vestidos, conjuntos, cores, tamanhos…" autocomplete="off">
+        <button type="submit" class="btn btn-primario btn-mini">Buscar</button>
+        <button type="button" class="icone-btn" data-fechar aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </form>
+      <div class="busca-sugestoes" id="busca-sugestoes"></div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <div class="pagina-topo">
+      <div class="container">
+        <p class="caminho"><a href="index.html">Início</a> › Sobre</p>
+        <h1>A Maria Fifi Store</h1>
+        <p>As roupas que dão o que falar — e a mulher por trás delas.</p>
+      </div>
+    </div>
+
+    <section class="secao">
+      <div class="container editorial">
+        <div class="editorial-foto">
+          <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=1000&q=80" alt="Fifi, dona da Maria Fifi Store, apresentando as peças da loja" loading="lazy" onerror="mfImgFalha(this)">
+        </div>
+        <div>
+          <span class="eyebrow">Nossa história</span>
+          <p class="script">Prazer, eu sou a Fifi</p>
+          <h2>De uma vitrine em Águas Lindas para o Brasil inteiro</h2>
+          <p>A Maria Fifi Store começou com uma ideia simples: roupas bonitas são ótimas, mas roupas que deixam a mulher se sentir bem são outra coisa. Foi assim que a loja nasceu em Águas Lindas de Goiás — com peças escolhidas uma a uma, provadas, ajustadas e só então colocadas na arara.</p>
+          <p>Com o tempo, as clientes passaram a indicar a loja para amigas, primas e irmãs. Hoje atendemos clientes em todo o Brasil, com envio por Correios e transportadora, mantendo o mesmo cuidado de sempre: cada pedido sai daqui conferido, embalado e com um bilhete da Fifi.</p>
+          <p class="editorial-destaque">“As roupas que dão o que falar — porque quando a mulher se sente bem, o look fala sozinho.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-alternada">
+      <div class="container">
+        <div class="secao-titulo">
+          <span class="eyebrow">Como a gente trabalha</span>
+          <h2>Curadoria, proximidade e honestidade</h2>
+        </div>
+        <div class="categorias-grade" style="grid-template-columns:repeat(3,1fr)">
+          <div style="background:var(--branco-puro);border:1px solid var(--borda);border-radius:14px;padding:1.8rem">
+            <h3>Curadoria de verdade</h3>
+            <p>Cada peça passa pelo meu crivo: modelagem que valoriza corpos reais, tecido que dura e preço que cabe no dia a dia.</p>
+          </div>
+          <div style="background:var(--branco-puro);border:1px solid var(--borda);border-radius:14px;padding:1.8rem">
+            <h3>Provador Fifi</h3>
+            <p>Não sabe o tamanho? Chama no WhatsApp: eu pergunto suas medidas, sugiro peças e mando fotos e vídeos de cada look.</p>
+          </div>
+          <div style="background:var(--branco-puro);border:1px solid var(--borda);border-radius:14px;padding:1.8rem">
+            <h3>Variedade de corpos</h3>
+            <p>Trabalhamos do P ao GG, com modelagens que acompanham corpos diferentes. Beleza não tem tamanho — e a nossa loja prova isso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container editorial">
+        <div>
+          <span class="eyebrow">Loja física</span>
+          <h2>Passe na loja em Águas Lindas</h2>
+          <p>A loja física é o coração da Maria Fifi Store. Venha experimentar as peças, converse com a equipe e saia com o look pronto. Se preferir, a gente fecha o pedido pelo WhatsApp e envia para a sua casa.</p>
+          <ul style="list-style:none;display:grid;gap:0.6rem;color:var(--texto-suave)">
+            <li><strong>Endereço:</strong> Águas Lindas de Goiás — GO</li>
+            <li><strong>Horários:</strong> segunda a sábado, das 9h às 19h</li>
+            <li><strong>WhatsApp:</strong> (61) 98197-5681</li>
+            <li><strong>Instagram:</strong> @mariafifii_store — 15 mil seguidoras</li>
+          </ul>
+          <div style="display:flex;gap:0.7rem;flex-wrap:wrap;margin-top:1.4rem">
+            <a class="btn btn-primario" href="contato.html">Ver contato e localização</a>
+            <a class="btn btn-zap" href="https://wa.me/5561981975681?text=Oi%2C%20Fifi%20%F0%9F%92%9C%20Quero%20visitar%20a%20loja!" target="_blank" rel="noopener">Falar com a Fifi</a>
+          </div>
+        </div>
+        <div class="editorial-foto">
+          <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1000&q=80" alt="Ambiente da loja Maria Fifi Store com araras organizadas" loading="lazy" onerror="mfImgFalha(this)">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="marca" href="index.html">
+            <img src="assets/logo.svg" alt="Logotipo da Maria Fifi Store" width="56" height="56">
+            <span>
+              <span class="marca-nome">Maria Fifi Store</span>
+              <span class="marca-assinatura">as roupas que dão o que falar</span>
+            </span>
+          </a>
+          <p style="margin-top:1rem">Moda feminina com curadoria, de Águas Lindas para todo o Brasil.</p>
+          <div class="rodape-redes">
+            <a href="https://www.instagram.com/mariafifii_store/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/5561981975681" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Comprar</h4>
+          <ul>
+            <li><a href="catalogo.html">Catálogo completo</a></li>
+            <li><a href="catalogo.html?cat=Vestidos">Vestidos</a></li>
+            <li><a href="catalogo.html?cat=Conjuntos">Conjuntos</a></li>
+            <li><a href="catalogo.html?ordem=promocao">Promoções</a></li>
+            <li><a href="sacola.html">Minha sacola</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre a loja</a></li>
+            <li><a href="contato.html">Contato e localização</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="trocas.html">Trocas e devoluções</a></li>
+            <li><a href="privacidade.html">Privacidade e condições</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul class="rodape-contato">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15v-3.2l-4-1.6-2 2a12 12 0 0 1-6.2-6.2l2-2L7.2 5z"/></svg> <a href="https://wa.me/5561981975681" target="_blank" rel="noopener">(61) 98197-5681</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> <a href="mailto:contato@mariafifistore.com.br">contato@mariafifistore.com.br</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Águas Lindas de Goiás — GO</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Seg a sáb, das 9h às 19h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© <span data-ano></span> Maria Fifi Store — Todos os direitos reservados.</span>
+        <span>Feito com carinho em Goiás 💜</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
